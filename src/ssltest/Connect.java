@@ -19,6 +19,7 @@ public class Connect {
 		try {
 			if (args == null || args.length != 1) {
 				System.out.println("引数にhttps接続するURLを指定してください。");
+				return;
 			}
 			URL url = new URL(args[0]);
 			HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
